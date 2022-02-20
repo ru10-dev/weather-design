@@ -1,0 +1,234 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@200&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Barlow', sans-serif;
+    background: linear-gradient(90deg, #7474BF 10%, #348AC7 90%);
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+    overflow: hidden;  
+   
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}    
+
+p {
+    font-size: 30px;
+    color: #fff;
+    font-weight: bolder;
+}
+
+
+.form input[type=text] {
+    padding: 10px;
+    font-size: 17px;
+    border: 3px solid rgb(41, 41, 41);
+    border-radius: 12px;
+    float: left;
+    width: 70%;
+    height: 55px;
+    background: #f1f1f1;
+  }
+
+ .form input[type=text]:focus {
+    outline: none;
+  }
+  
+.form button {
+    float: left;
+    width: 10%;
+    padding: 15px;
+    border: none;
+    border-radius: 12px;
+    margin-left: 10px;
+    background: #2196F3;
+    color: white;
+    font-size: 22px;
+    cursor: pointer;
+  }
+  
+.form button:hover {
+    background: #0b7dda;
+  }
+
+.form button:active {
+      transform: scale(0.96);
+  }
+  
+ .form::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
+  .center-form {
+      display: flex;
+      justify-content: space-between;
+      padding-top: 40px;
+  }
+
+  div.center-form button {
+    width: 14%;
+    padding: 15px;
+    border: none;
+    border-radius: 12px;
+    background: #2196F3;
+    color: white;
+    font-size: 22px;
+    cursor: pointer;
+  }
+
+  div.center-form input[type=text] {
+    padding: 10px;
+    font-size: 17px;
+    border: 3px solid rgb(41, 41, 41);
+    border-radius: 12px;
+    width: 30%;
+    height: 55px;
+    margin-right:230px;
+    background: #f1f1f1;
+  }
+
+  div.center-form input[type=text]:focus {
+    outline: none;
+  }
+
+  .center-form button:hover {
+    background: #0b7dda;
+  }
+
+.center-form button:active {
+      transform: scale(0.96);
+  }
+
+/* Cards */
+
+  #weather_wrapper{
+    width: 320px;
+    margin-top: 100px;
+    display: inline-block;
+    margin-left: 20px;
+  }
+
+  .weatherCard{
+    width: 320px;
+    height: 200px;
+    position: relative;
+  }
+
+  .currentTemp{
+    width: 150px;
+    height: 200px;
+    background: rgb(41, 41, 41);
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  .currentWeather{
+    width: 180px;
+    height: 200px;
+    background: rgb(237, 237, 237);
+    margin: 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+
+  .temp{
+    font-size: 80px;
+    text-align: center;
+    display: block;
+    font-weight: 300;
+    color: rgb(255, 255, 255);
+    padding: 20px 0 0;
+  }
+
+  .location{
+    color: rgb(255, 255, 255);
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 30px;
+    display: block;
+  }
+
+  .conditions{
+    font-size: 80px;
+    display: block;
+    padding: 20px 0 0;
+    text-align: center;
+  }
+  
+  .info{
+    width: 180px;
+    height: 50px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background: rgb(42, 178, 234);
+    font-weight: 700;
+    color: rgb(255, 255, 255);
+    text-align: center;
+  }
+
+  .sunny {
+    width: 50%;
+    word-spacing: 60px;
+    font-size: 40px;
+  }
+
+  /*Footer*/
+
+  .navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+  
+  .navbar a {
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    border-right: 3px solid black;
+  }
+
+  .navbar a:active {
+    color: blue;
+  }
+
+  .navbar a:last-of-type {
+      border-right: none;
+  }
+  
+
+
+  /* Anasayfa */
+
+  .home {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+  }
+
+  .home h1 {
+      color: #fff;
+      font-size: 50px;
+  }

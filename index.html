@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <title>Weather Design</title>
+</head>
+<body>
+    <div class="container">
+
+        <!-- Header Search Box And Buttons-->
+        <p>Add new city</p>
+        <form class="form">
+          <input type="text" placeholder="Search.." >
+          <button type="submit"><i class="fa-solid fa-plus"></i> Add</button>
+        </form>
+
+        <div class="center-form">
+            <button type="submit"><i class="fa-solid fa-arrows-rotate"></i> Refresh</button>
+            <input type="text" placeholder="Fulltext search by name" >
+        </div>
+
+
+        <!-- Weather Cards -->
+        <div id="weather_wrapper">
+            <div class="weatherCard">
+              <div class="currentTemp">
+                <span class="temp">23&deg;</span>
+                <span class="location">Ankara</span>
+              </div>
+              <div class="currentWeather">
+                <span class="conditions"><i class="fa-solid fa-sun"></i></span>
+                <div class="info">
+                  <span class="sunny">Sunny</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div id="weather_wrapper">
+            <div class="weatherCard">
+              <div class="currentTemp">
+                <span class="temp">4&deg;</span>
+                <span class="location">Alaska</span>
+              </div>
+              <div class="currentWeather">
+                <span class="conditions"><i class="fa-solid fa-cloud-rain"></i></span>
+                <div class="info">
+                  <span class="sunny">Rainy</span>
+                </div>
+              </div>
+              
+            </div>
+          </div>
+
+          <div id="weather_wrapper">
+            <div class="weatherCard">
+              <div class="currentTemp">
+                <span class="temp">-12&deg;</span>
+                <span class="location">London</span>
+              </div>
+              <div class="currentWeather">
+                <span class="conditions"><i class="fa-solid fa-snowflake"></i></span>
+                <div class="info">
+                  <span class="sunny">Snow</span>
+                </div>
+              </div>
+              
+            </div>
+          </div>
+        </div>
+
+          <!--Footer-->
+
+          <div class="navbar">
+            <a href="home.html">Home</a>
+            <a href="index.html">About</a>
+          </div>
+
+  
+
+</body>
+</html>
